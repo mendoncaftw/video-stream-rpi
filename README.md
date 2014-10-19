@@ -15,3 +15,4 @@ To use this solution you just need to follow the tutorial up until you start *ra
 ```
 sudo python stream.py
 ```
+Then just open a browser and type your RPi's address followed by the name of the player you wish to use, ex: http://rpi_address/strobemediaplayer

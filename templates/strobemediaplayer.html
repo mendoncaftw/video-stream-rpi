@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Stream with Strobe Media Playback</title>
+    <script type="text/javascript" src="{{url_for('static',filename='swfobject.js')}}"></script>
+   <script type="text/javascript">        
+          
+       // Create a StrobeMediaPlayback configuration 
+      var parameters = {  
+                     src: "rtmp://" + window.location.hostname + "/flvplayback/myStream",  
+                              autoPlay: true,  
+                     controlBarAutoHide: false,  
+                     playButtonOverlay: true,  
+                     showVideoInfoOverlayOnStartUp: false,  
+                              optimizeBuffering : false,  
+                              initialBufferTime : 0.1,  
+                              expandedBufferTime : 0.1,  
+                              minContinuousPlayback : 0.1,  
+                     poster: "strobe/images/poster.png"  
+                   };  
+          
+      // Embed the player SWF:          
+      swfobject.embedSWF
+         ( "{{url_for('static',filename='StrobeMediaPlayback.swf')}}"
+         , "strobeMediaPlayback"
+         , 640
+         , 480
+         , "10.1.0"
+         , {}
+         , parameters
+         , { allowFullScreen: "true"}
+         , { name: "strobeMediaPlayback" }
+         );
+      
+    </script>     
+  </head>
+  <body>
+   
+   <div id="strobeMediaPlayback">
+      <p>Alternative content</p>
+    </div>
+  </body>
+</html>

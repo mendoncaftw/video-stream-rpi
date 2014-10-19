@@ -1,7 +1,7 @@
 video-stream-rpi
 ================
 
-Simple **Flask** application for the **Raspberry Pi** that allows you to **stream** from the **camera** to any browser through **RTMP** protocol.
+Simple **Flask** application for the **Raspberry Pi** that allows you to **stream** from the **camera** to any browser through the **RTMP** protocol.
 
 For the full installation just follow the instructions available at http://www.raspberrypi.org/forums/viewtopic.php?f=43&t=45368.
 
